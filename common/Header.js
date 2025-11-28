@@ -7,11 +7,7 @@ export default function RenderHeader(pageName)
                 <!-- Logo -->
                 <div class="flex items-center">
                     <div class="h-16 w-16 rounded-full bg-white flex items-center justify-center">
-                        <svg class="h-12 w-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#1f1a50"/>
-                            <path d="M50 20 L35 40 L35 70 L50 80 L65 70 L65 40 Z" fill="#fe7701"/>
-                            <text x="50" y="58" font-size="24" font-weight="bold" fill="white" text-anchor="middle">ICES</text>
-                        </svg>
+                        <img src="mubasiceslogo.png" width=45>
                     </div>
                 </div>
 
