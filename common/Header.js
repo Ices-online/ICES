@@ -57,11 +57,12 @@ export default function RenderHeader(pageName)
     const mobileMenuBtnElem = document.getElementById('mobileMenuBtn');
     // if(mobileNavElem){
 
-        mobileMenuBtnElem.addEventListener('click', ()=>{
+        mobileMenuBtnElem.addEventListener('click', (e)=>{
+            e.preventDefault();
             const mobileNavElem = document.getElementById('mobile-menu');
-            mobileNavElem.querySelectorAll('.mobile-nav-element').forEach((element) => {
+            document.querySelectorAll('.mobile-nav-element').forEach((element) => {
+                console.log(element.innerText);
                 if (element.innerText === pageName) {
-                    console.log(element.innerText);
                     element.classList.add('active');
                 } else {
                     element.classList.remove('active');
